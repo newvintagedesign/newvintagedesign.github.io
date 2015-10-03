@@ -1,0 +1,186 @@
+/* FONT IMPORTS */
+@font-face { font-family: "new"; src: url(../font/new.ttf) format("truetype"); }
+@font-face { font-family: "vintage"; src: url(../font/vintage.ttf) format("truetype"); }
+@font-face { font-family: "design"; src: url(../font/design.ttf) format("truetype"); }
+/* PAGE AND BODY ATTRIBUTES */
+html, body{ 
+	padding: 0px; 
+	margin: 0px; 
+	font-family: helvetica Neue; 
+	font-weight: lighter; 
+	color: #ccc; 
+	background-color: #000;  
+}
+
+/* NEW VINTAGE DESIGN HEADER */
+header{ 
+	height: 100px; 
+	width: 100vw; 
+	top: 0px; 
+	left: 0px; 
+	position: fixed; 
+	background-color: #222; 
+	box-shadow: 0px 1px 5px #000; 
+	z-index: 100;
+}
+
+#headerlogo img{ 
+	height: 100px; 
+	float: left; 
+	margin-top: 0px; 
+}
+
+.headcontainer{
+	width: 960px;
+	margin: 0px auto;
+}
+
+/* SOCIAL MEDIA ELEMENTS */
+#socialmedia{ 
+	width: 160px; 
+	float: right; 
+	margin-right: 0px; 
+	margin-top: 30px; 
+}
+
+#socialmedia img{ 
+	height: 30px; 
+	margin: 0px 3px; 
+}
+
+/* SEARCH BOX */
+#searchfield{ 
+	width: 695px; 
+	height: 100px; 
+	float: left; 
+	padding: 0px; 
+}
+
+#searchbox{ 
+	width: 400px; 
+	height: 20px; 
+	margin: 35px auto 0px auto; 
+	padding: 2px; 
+	border: 2px solid #fff; 
+	border-radius: 30px; 
+	outline: none; 
+	background-color: #ccc; 
+}
+
+#searchbox img{ 
+	height: 10px; 
+	margin-left: 10px; 
+}
+
+#searchfield input[type=text], input:focus{ 
+	background-color: #ccc; 
+	font-size: 15px; 
+	outline: none; 
+	margin: 0px auto; 
+	padding: 0px; 
+	width: 360px; 
+	height: 20px; 
+	border: 0px; 
+}
+
+/* NAVIGATION CONTENTS */
+#nav{ 
+	height: 30px; 
+	width: 100vw; 
+	background-color: #111; 
+	top: 100px; 
+	left: 0px; 
+	position: fixed;  
+	box-shadow: 0px 1px 7px #000;
+	z-index: 99;
+}
+
+#homebutton:hover{
+	border-bottom: 2px solid #e65d5d; 
+	background-color: #333;
+}
+#websitesbutton:hover{
+	border-bottom: 2px solid #6fc1d2; 
+	background-color: #333;
+}
+#designbutton:hover{
+	border-bottom: 2px solid #7dc692; 
+	background-color: #333;
+}
+#blogbutton:hover{
+	border-bottom: 2px solid #dfbc42; 
+	background-color: #333;
+}
+
+#contactbutton:hover{
+	border-bottom: 2px solid #d98e64; 
+	background-color: #333;
+}
+#loginbutton:hover{
+	border-bottom: 2px solid #dd6bae; 
+	background-color: #333;
+}
+#signupbutton:hover{
+	border-bottom: 2px solid #ffffff; 
+	background-color: #333;
+}
+
+
+/* LINKS */
+#links{ 
+	width: 700px; 
+	float: left; 
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#facebook:hover { opacity: 0.6; }
+#twitter:hover { opacity: 0.6; }
+#youtube:hover { opacity: 0.6; }
+
+.navbutton{
+	font-size: 15px;
+	font-family: helvetica neue;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ccc;
+	padding: 6px 20px;
+	border-bottom: 2px solid transparent;
+}
+
+/* LOGIN */
+#login{ 
+	float: right; 
+		padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+/* ANCHORS */
+.anchor{   
+	display: block; 
+	height: 130px; /*same height as header*/ 
+	margin-top: -130px; /*same height as header*/ 
+	visibility: hidden;
+}
+
+.main{ 
+	width: 100vw; 
+	min-width: 960px;
+	background: #ffffff; 
+	margin: 0px;
+	position: relative;
+	top: 0px;
+	min-height: calc(100vh - 130px);
+}
+
+.container{
+	width: 960px;
+	margin: 0px auto;
+	min-height: calc(100vh - 130px);
+}
+
+#hide-header{
+	height: 130px;
+	background-color: #000;
+	height: 130px;
+}
