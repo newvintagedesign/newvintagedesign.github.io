@@ -1,3 +1,12 @@
+html, body{ 
+    padding: 0px; 
+    margin: 0px; 
+    font-family: helvetica Neue; 
+    font-weight: lighter; 
+    color: #ccc; 
+    background-color: #000;  
+}
+
 img{ 
 	margin-top: 40px;
 	height: 40vh; 
