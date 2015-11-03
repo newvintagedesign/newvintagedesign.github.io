@@ -1,46 +1,252 @@
-html, body{ 
-    padding: 0px; 
-    margin: 0px; 
-    font-family: helvetica Neue; 
-    font-weight: lighter; 
-    color: #ccc; 
-    background-color: #000;  
+@font-face { font-family: "nvd black"; src: url(../fonts/nvd_black.ttf) format("truetype"); }
+@font-face { font-family: "nvd bold"; src: url(../fonts/nvd_bold.ttf) format("truetype"); }
+@font-face { font-family: "nvd light"; src: url(../fonts/nvd_light.ttf) format("truetype"); }
+@font-face { font-family: "nvd"; src: url(../fonts/nvd_regular.ttf) format("truetype"); }
+
+
+html, body {
+		background: url(../img/sky.jpg);
+	background-size: cover;
+	padding: 0px;
+	margin: 0px;
+	font-family: nvd;
+	font-weight: normal;
+	color: #fff;
 }
 
-img{ 
-	margin-top: 40px;
-	height: 40vh; 
-	width: auto; 
-	box-shadow: 15px 15px 10px #111; 
+h1{font-family: nvd black; font-size: 100px; line-height: 80px; margin: 0px; padding: 0px; text-shadow: 0px 0px 10px #000;}
+h2{font-size: 140px; line-height: 100px; margin: 0px; padding: 0px; text-shadow: 0px 0px 10px #000;}
+h3{font-family: nvd bold;}
+h4{}
+h5{ font-family: nvd bold; font-size: 30px; margin: 0px; padding: 0px; }
+
+.sky{
+	height: 100vh;
+	width: 100vw;
+	z-index: 0;
+	overflow: scroll;
 }
 
-h1 { 
-	font-family: helvetica neue; 
-	font-size: 10vh; 
-	text-shadow: 0px 0px 5px #000; 
-    color: #fff;
+header{
+	position: fixed;
+	top: 0px;
+	height: 50px;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 2;
+	background-color: transparent;
+	text-align: right;
 }
-
-
+		header li{
+			display: inline-block;
+			list-style: none;
+			margin-right: 30px;
+		}
 
 .outer {
     display: table;
     position: absolute;
-    height: 100%;
     width: 100%;
-    background-image: url(../img/websites.jpg);
-	background-position: 50% 50%;
-	background-size: cover;
+    height: 100vh;
 }
+	#logo{
+		z-index: 1;
+	}
 
 .middle {
     display: table-cell;
     vertical-align: middle;
-}
-
-.inner {
-    margin-left: auto;
-    margin-right: auto; 
-    width: 100%;
     text-align: center;
 }
+	.slogans{
+		font-size: 90px;
+		width: 800px;
+		margin: 20px auto 0px auto;
+		text-align: center;
+		height: 100px;
+		font-family: nvd black;
+	}
+		#slogan1{
+			display: none;
+			position: absolute;
+			text-align: center;
+			width: 800px;
+			height: 100px;
+		}
+		#slogan2{
+			display: none;
+			position: absolute;
+			text-align: center;
+			width: 800px;
+			height: 100px;
+		}
+		#slogan3{
+			display: none;
+			position: absolute;
+			text-align: center;
+			width: 800px;
+			height: 100px;
+		}
+		#nvdlogo{
+			width: 50vh;
+			height: auto;
+		}
+
+.content{
+	width: 100%;
+	height: 2000px;
+	position: relative;
+	z-index: 1;
+	padding-top: 100vh;
+}
+	
+	.blank{
+		height: 100vh;
+		width: 100%;
+		z-index: 1;
+	}
+	.buildings{
+		width: 100%;
+	}
+		.buildings img{
+			width: 100%;
+		}
+.reflection{
+	width: 100%;
+	height: 150px;
+	background: url(../img/reflection.jpg);
+	background-size: 100% 150px;
+	margin-top: -5px;
+	background-repeat: no-repeat;
+}
+.water{
+	width: 100%;
+	height: 1800px;
+	background: url(../img/water.jpg);
+	background-size: 100% 2400px;
+	margin-top: -5px;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+}
+
+.margin{
+	width: 960px;
+	height: 900px;
+	padding-top: 50px;
+	margin: 0px auto;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.contact{
+	height: 1250px;
+	width: 100%;
+	background-color: #000;
+	margin: 0px auto;
+	text-align: center;
+}
+	.contact-box{
+		width: 960px;
+		height: 400px;
+		margin: 0px auto;
+		text-align: center;
+		font-family: nvd light;
+		font-size: 27px;
+	}
+	.contact-left{
+		width: 480px;
+		height: 100%;
+		background-color: #000;
+		float: left;
+	}
+		.contact-left img{
+			height: 400px;
+		}
+	.contact-right{
+		width: 480px;
+		height: 360px;
+		background-color: #000;
+		float: right;
+		text-align: center;
+		padding-top: 30px; 
+		font-family: nvd;
+	}
+
+
+
+#websites{
+	overflow: hidden;
+}
+
+#websites-e{
+	text-align: center;
+	padding-top: 100px;
+	overflow: hidden;
+}
+
+#websites-e h1{
+	font-size: 10em;
+	padding: 0px;
+	margin: 0px;
+	line-height: 130px;
+}
+
+#websites-e h2{
+	font-size: 16.4em;
+	padding: 0px;
+	margin: 0px;
+	line-height: 160px;
+}
+
+#featured{
+	overflow: hidden;
+	width: 990px;
+	background-color: #000;
+	margin: 20px auto;
+}
+
+#item{
+	float: left;
+	background-color: #fff;
+	height: auto;
+	width: 300px;
+	height: 300px;
+	margin: 15px 15px;
+}
+
+#item img{
+	height: auto;
+	width: 280px;
+	height: 280px;
+	margin: 10px 10px;
+}
+
+#item:hover{
+	opacity: 0.6;
+}
+
+iframe{
+	height: 700px;
+	width: 600px;
+	border: 0px;
+}
+
+footer{
+	background-color: #000;
+	font-size: 12px;
+	padding-left: 20px;
+	height: 70px;
+}
+
+	footer img{
+		height: 40px;
+		width: auto;
+		float: right;
+		margin-right: 20px;
+	}
+	footer img:hover{
+				opacity: 0.7;
+	}
+
+
+
