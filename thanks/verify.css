@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Melbourne;
+    src: url(../app/fonts/Melbourne_reg.otf);
+}
+
+html, body {
+    background: #29235c;
+    font-family: Melbourne;
+    padding: 0px;
+    margin: 0px;
+    color: #000;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+h5 {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;   
+}
+
+table {
+    text-align: left;
+}
+
+#one {
+    padding-left: 200px; 
+    width: 50px;
+}
+
+#two {
+    text-align: left;
+    padding-top: -5px;
+}
+
+.form-control {
+    margin: 5px;
+}
+
+#permissions {
+    font-size: 15px;
+}
+
+.outer {
+    position: relative;
+    display: table;
+    height: 100vh;
+    width: 100vw;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.logo {
+    height: 500px;
+    width: auto;
+}
+
+#information {
+    color: #fff;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+#auto-comp {
+    padding: 5px;
+    width: 300px;
+    font-size: 18px;
+}
+
+#determine-ward {
+    color: #8cc63f;
+    font-size: 20px;
+    margin: 20px;
+}
+
+#paragraph {
+    margin: 20px 0px;
+}
+
+.modal {
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    overflow-y: hidden;
+}
+
+#logo-blue {
+    height: 100px;
+    width: auto;
+}
+
+.modal-body {
+    font-size: 30px;
+}
+
+#vote {
+    background-color: #29235c;
+    padding: 5px 20px;
+    color: #fff;
+    font-size: 18px;
+    margin: 0px auto;
+}
+
+#vote:focus {
+    outline: none;
+}

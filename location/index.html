@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8/>
+    <title>LYAC Election 2016</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'/>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../app/js/vendor.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v1.5.2/mapbox.js'></script>
+    <script src='../app/js/leaflet-pip.min.js'></script>
+    <script type="text/javascript"
+            src="https://maps.google.com/maps/api/js?libraries=geometry,places&sensor=false"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../app/css/vendor.min.css">
+    <link rel="stylesheet" type="text/css" href="location.css">
+</head>
+<body>
+
+<div class="outer">
+    <div class="inner">
+        <a href="http://www.lyac.ca"><img id="logo" src="../app/img/logo.svg"></a>
+        <p>
+            <div id="information">
+                <hr>
+        <p id="paragraph">
+        <h1>Welcome to the LYAC election ballot</h1>
+        You can vote from either your home address or your school (whichever you identify most with). If you are voting
+        from your school it often helps to write 'Elementary School' or 'Secondary School' to ensure it will show up in
+        the search bar below.
+        </p>
+    </div>
+    <span id="determine-ward">Enter your address or school to determine your ward:</span>
+    <p>
+        <input type="text" id="auto-comp"/><br>
+    <div id="vote-container">
+        <input type="button" class="btn btn-primary btn-md" id="vote" value="This is my address"/>
+    </div>
+</div>
+</div>
+
+<div class='modal fade' id='vote-modal' role='dialog'>
+    <div class='modal-dialog'>
+        <div class='modal-content'>
+            <div class="modal-header text-center">
+                <img id="logo-blue" src="../app/img/logo.png">
+            </div>
+            <div class="modal-body text-center">
+                <h3>Sorry, you must select an address that is</h3>
+                <h3>Within the boundry of the City of London</h3>
+
+            </div>
+            <div class="modal-footer text-center">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="location.js"></script>
+
+</body>
+</html>

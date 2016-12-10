@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Melbourne;
+    src: url(../app/fonts/Melbourne_reg.otf);
+}
+
+html, body {
+    background: #29235c;
+    font-family: Melbourne;
+    padding: 0px;
+    margin: 0px;
+    color: #000;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+h5 {
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;   
+}
+
+table {
+    text-align: left;
+}
+
+
+.outer {
+    position: relative;
+    display: table;
+    height: 100vh;
+    width: 100vw;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.logo {
+    height: 500px;
+    width: auto;
+}
+
+#information {
+    color: #fff;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+#auto-comp {
+    padding: 5px;
+    width: 300px;
+    font-size: 18px;
+}
+
+#determine-ward {
+    color: #8cc63f;
+    font-size: 20px;
+    margin: 20px;
+}
+
+#paragraph {
+    margin: 20px 0px;
+}
+
+#vote {
+    background-color: #29235c;
+    padding: 5px 20px;
+    color: #fff;
+    font-size: 18px;
+    margin: 0px auto;
+}
+
+#vote:focus {
+    outline: none;
+}
+
+#your_vote {
+    background-color: transparent;
+    color: #fff;
+    border: 0px;
+    text-align: center;
+    font-size: 25px;
+    height: 50px;
+    box-shadow: none;
+}
