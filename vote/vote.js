@@ -1,20 +1,20 @@
 var verify = (function () {
 
     var candidates = {
-        ward01: ['Dana Booth', 'Michael Torok', 'Spoiled Ballot'],
-        ward02: ['Brandon Dickson', 'Piercon Knezic', 'Spoiled Ballot'],
-        ward03: ['Asala Aladl', 'Mickey Tecleab', 'Spoiled Ballot'],
-        ward04: ['Meegan St. Denis', 'Zola Ncube', 'Spoiled Ballot'],
-        ward05: ['Kaygen Dache', 'Ben Drummond', 'Fawaz Mahbouba', 'Spoiled Ballot'],
-        ward06: ['Landon Tulk', 'Grace Wu', 'Rachel Phillips', 'Spoiled Ballot'],
-        ward07: ['Almas Farooqi', 'Jacob Bildy', 'Lev Konopelko', 'Mariam Said', 'Spoiled Ballot'],
-        ward08: ['Rosa Pashaei', 'Olivia Akena', 'Vesa Shabani', 'Hassan Yousef', 'Yusra Al-Sharafi', 'Spoiled Ballot'],
-        ward09: ['Maia Harris', 'Noor Hmidan Simsam', 'Spoiled Ballot'],
-        ward10: ['Benjamin Charlebois', 'Spoiled Ballot'],
-        ward11: ['Zac Piette', 'Moeez Tahir', 'Spoiled Ballot'],
-        ward12: ['Floranda Agroam', 'Michael Scafe', 'Raghad Elniwairi', 'Twana Husni', 'Spoiled Ballot'],
-        ward13: ['Jocelyn Wong', 'Tyler Bryden', 'McKenzie Edwards', 'Meghan Matthies', 'Hannah McPherson', 'Spoiled Ballot'],
-        ward14: ['Camilla Cusmaan', 'Spoiled Ballot']
+        ward01: ['Shania Simon', 'Spoiled Ballot'],
+        ward02: ['Emmanuel Akindele', 'Spoiled Ballot'],
+        ward03: ['Nohra Yauhnis', 'Spoiled Ballot'],
+        ward04: ['Rachel Gannon', 'James Fletcher-Dean', 'Spoiled Ballot'],
+        ward05: ['Ryan Muszak', 'Lujane Al-Azem', 'Spoiled Ballot'],
+        ward06: ['Shuo Zhang', 'Reza Naqvi', 'Soomin Lee', 'Eman Muzzammil', 'Spoiled Ballot'],
+        ward07: ['Areej Ansari', 'Spoiled Ballot'],
+        ward08: ['Shehaam Makhdoom', 'Ruben Gomez', 'Charlie Liu', 'Spoiled Ballot'],
+        ward09: ['Ahmad Zyoud', 'Sheru Yousafzai', 'Spoiled Ballot'],
+        ward10: ['Zac Piette', 'Spoiled Ballot'],
+        ward11: ['Mike Scafe', 'Taryn Reid', 'Spoiled Ballot'],
+        ward12: ['Nada Alaloul', 'Raghad El Niwairi', 'Elif Beyatli', 'Spoiled Ballot'],
+        ward13: ['Mustfah Madlol', 'Sarah Chun', 'Deana Ruston', 'Spoiled Ballot'],
+        ward14: ['CAnnie Cho', 'Zahra Naqvi', 'Spoiled Ballot']
     }
 
     function candidateAppender(key) {
@@ -25,24 +25,23 @@ var verify = (function () {
         return html;
     }
 
-
     function checkRadio() {
         var r = document.getElementsByName("your_vote");
-        var s = document.getElementsByName("referendum");
+        // var s = document.getElementsByName("referendum");
         var c = -1
-        var d = -1
+        // var d = -1
 
         for (var i = 0; i < r.length; i++) {
             if (r[i].checked) {
                 c = i;
             }
         }
-        for (var i = 0; i < s.length; i++) {
-            if (s[i].checked) {
-                d = i;
-            }
-        }
-        if (c == -1 || d == -1) {
+        // for (var i = 0; i < s.length; i++) {
+        //     if (s[i].checked) {
+        //         d = i;
+        //     }
+        // }
+        if (c == -1) {
             return false;
         }
         return true;
@@ -155,7 +154,7 @@ var verify = (function () {
 
                 // Use Ajax to submit form data
                 var url = 'https://script.google.com/macros/s/AKfycbwcYgaF2tk_-k1nt436LNUBCRBd4YzBXKsC4a2_EiPePquW_Xg/exec';
-                var arrayForm = makeArray();
+                var arrayForm = makeArray(e);
                 var redirectUrl = setURI(arrayForm);
                 // show the loading
                 $('#postForm').prepend($('<span></span>').addClass('glyphicon glyphicon-refresh glyphicon-refresh-animate'));
@@ -250,13 +249,13 @@ var verify = (function () {
     setCandidates();
 
 
-    function makeArray() {
+    function makeArray(e) {
         var inputArray = [];
         if (checkRadio() === true) {
             $('#address').val(getAddress());
             $('#ward').val(getWard());
 
-            $('input[type="text"], input[type="number"], input[type="radio"]:checked').each(function () {
+            $('input[type="text"], input[type="number"], input[type="phone"], input[type="radio"]:checked').each(function () {
                 inputArray.push($(this).val());
             });
             if (document.getElementById('email_opt').checked) {
