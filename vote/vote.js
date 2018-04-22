@@ -1,20 +1,20 @@
 var verify = (function () {
 
     var candidates = {
-        ward01: ['Shania Simon', 'Spoiled Ballot'],
-        ward02: ['Emmanuel Akindele', 'Spoiled Ballot'],
-        ward03: ['Nohra Yauhnis', 'Spoiled Ballot'],
-        ward04: ['Rachel Gannon', 'James Fletcher-Dean', 'Spoiled Ballot'],
-        ward05: ['Ryan Muszak', 'Lujane Al-Azem', 'Spoiled Ballot'],
-        ward06: ['Shuo Zhang', 'Reza Naqvi', 'Soomin Lee', 'Eman Muzzammil', 'Spoiled Ballot'],
-        ward07: ['Areej Ansari', 'Spoiled Ballot'],
-        ward08: ['Shehaam Makhdoom', 'Ruben Gomez', 'Charlie Liu', 'Spoiled Ballot'],
-        ward09: ['Ahmad Zyoud', 'Sheru Yousafzai', 'Spoiled Ballot'],
-        ward10: ['Zac Piette', 'Spoiled Ballot'],
-        ward11: ['Mike Scafe', 'Taryn Reid', 'Spoiled Ballot'],
-        ward12: ['Nada Alaloul', 'Raghad El Niwairi', 'Elif Beyatli', 'Spoiled Ballot'],
-        ward13: ['Mustfah Madlol', 'Sarah Chun', 'Deana Ruston', 'Spoiled Ballot'],
-        ward14: ['CAnnie Cho', 'Zahra Naqvi', 'Spoiled Ballot']
+        ward01: ['Muhammad Faran Khalid', 'Cindy Xie', 'Spoiled Ballot'],
+        ward02: ['Dominique Cho', 'Spoiled Ballot'],
+        ward03: ['Yuriry Karpov', 'Eleanor Park', 'Spoiled Ballot'],
+        ward04: ['Colin O\'Connor', 'Neha Siddiqui', 'Spoiled Ballot'],
+        ward05: ['Nunu Mequanint', 'Kristin Fearon', 'Paris Liu', 'Spoiled Ballot'],
+        ward06: ['Andrea Helter', 'Yuting Wei', 'Moeez Tahir', 'Spoiled Ballot'],
+        ward07: ['Lev Konopelko', 'Shehaam Makhdoom', 'Spoiled Ballot'],
+        ward08: ['Abdullah Al Jarad', 'Yusar Madlol', 'Spoiled Ballot'],
+        ward09: ['Bella Van Oirschot', 'Kaitlyn Anderson-Mitchell', 'Eric Trudell', 'Spoiled Ballot'],
+        ward10: ['Yasmin Amin', 'Ainsley Jeffrey', 'Spoiled Ballot'],
+        ward11: ['Spencer Reid', 'Spoiled Ballot'],
+        ward12: ['Raghad El Niwairi', 'Spoiled Ballot'],
+        ward13: ['Neehar Chintham', 'Alice Balluku', 'Sarah Chun', 'Spoiled Ballot'],
+        ward14: ['Erika Juhasz', 'Aashu Oza', 'Terry Ross', 'Spoiled Ballot']
     }
 
     function candidateAppender(key) {
