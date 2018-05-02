@@ -48,7 +48,7 @@ var verify = (function () {
                     url = 'https://script.google.com/macros/s/AKfycbxUEKgLHniO8f5Z-zeO3he-TzNIAahhl3LnAbmPy5yzd2j2giH0/exec';
                 }
                 else if (urlValues[3] == 6) {
-                    url = 'https://script.google.com/macros/s/AKfycbxSk9skHr0HktbUdRzNC9CaIlYgL2TJQZ2obu8ctNPW1tb1Rpk/exec';
+                    url = 'https://script.google.com/macros/s/AKfycbyPa-xPUjs7uLZMpWtgM25Ir0UXEzKH6Q69haR9cDf3ZkuICk0/exec';
                 }
                 else if (urlValues[3] == 7) {
                     url = 'https://script.google.com/macros/s/AKfycbzyQH39kXNyfrIVwObV9ywEmGUrW2d3eWaHQKUFCsfl-_c7Y4IV/exec';
