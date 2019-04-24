@@ -39,7 +39,7 @@ var verify = (function () {
                     url = 'https://script.google.com/macros/s/AKfycbx2n2HDo6WO0jLiikG_hDjIJJ-DYaBzRYpxnEskyPBpzz1JsWBR/exec';
                 }
                 if (urlValues[3] === "3") {
-                    url = 'https://script.google.com/macros/s/AKfycbxT1gQWurFRUO07rTe0nEX0gmfWSTGmaVH7CmMeXt7uYFJWO1-C/exec';
+                    url = 'https://script.google.com/macros/s/AKfycbwdhY6n2wA14M5wLZsfmMo9DN8YxrZ2FoJ7Mow0wVkhICZ-iWs/exec';
                 }
                 if (urlValues[3] === "4") {
                     url = 'https://script.google.com/macros/s/AKfycbyNhtRJ3nvqaq8UBN7PEMm7zk125jC27LU3gDzVSx5JPL4H550/exec';
