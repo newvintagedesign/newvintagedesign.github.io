@@ -1,20 +1,20 @@
 var verify = (function () {
 
     var candidates = {
-        ward01: ['Muhammad Faran Khalid', 'Cindy Xie', 'Spoiled Ballot'],
-        ward02: ['Dominique Cho', 'Spoiled Ballot'],
-        ward03: ['Yuriry Karpov', 'Eleanor Park', 'Spoiled Ballot'],
-        ward04: ['Colin O\'Connor', 'Neha Siddiqui', 'Spoiled Ballot'],
-        ward05: ['Nunu Mequanint', 'Kristin Fearon', 'Paris Liu', 'Spoiled Ballot'],
-        ward06: ['Andrea Helter', 'Yuting Wei', 'Moeez Tahir', 'Spoiled Ballot'],
-        ward07: ['Lev Konopelko', 'Shehaam Makhdoom', 'Spoiled Ballot'],
-        ward08: ['Abdullah Al Jarad', 'Yusar Madlol', 'Spoiled Ballot'],
-        ward09: ['Bella Van Oirschot', 'Kaitlyn Anderson-Mitchell', 'Eric Trudell', 'Spoiled Ballot'],
-        ward10: ['Yasmin Amin', 'Ainsley Jeffrey', 'Spoiled Ballot'],
-        ward11: ['Spencer Reid', 'Spoiled Ballot'],
-        ward12: ['Raghad El Niwairi', 'Spoiled Ballot'],
-        ward13: ['Neehar Chintham', 'Alice Balluku', 'Sarah Chun', 'Spoiled Ballot'],
-        ward14: ['Erika Juhasz', 'Aashu Oza', 'Terry Ross', 'Spoiled Ballot']
+        ward01: ['Cindy Xie', 'Spoiled Ballot'],
+        ward02: ['Kaitlyn Balluku', 'Sarah Chun', 'Spoiled Ballot'],
+        ward03: ['Natassha Ruiz', 'Sid Hunnia', 'Spoiled Ballot'],
+        ward04: ['Hanein Mostafa', 'Julia Gennette', 'Spoiled Ballot'],
+        ward05: ['Aditi Basdeo', 'Nunu Mequanint', 'Spoiled Ballot'],
+        ward06: ['Hamdi Babeker', 'Suad Bander', 'Areej Malik', 'Amanda Miknev', 'Spoiled Ballot'],
+        ward07: ['Rabia Mirza', 'Rishita Shukla', 'Spoiled Ballot'],
+        ward08: ['Hooriya Ansari', 'Yusar Madlol', 'Chaithanya Nair', 'Spoiled Ballot'],
+        ward09: ['Eric Trudell', 'Ryan Kelly', 'Spoiled Ballot'],
+        ward10: ['Anika Garg', 'Jessica Jagiello', 'Spoiled Ballot'],
+        ward11: ['Yazel Tuncer', 'Hayat Bander', 'Faran Khalid', 'Spoiled Ballot'],
+        ward12: ['Rimsha Ashraf', 'Moeez Tahir', 'Spoiled Ballot'],
+        ward13: ['Crystal Holmes', 'Alice Balluku', 'Carrie Cooper', 'Spoiled Ballot'],
+        ward14: ['Hawa Ahmed', 'Rayne Pratt', 'Sara Badawi', 'Spoiled Ballot']
     }
 
     function candidateAppender(key) {
@@ -152,6 +152,7 @@ var verify = (function () {
                 // Get the BootstrapValidator instance
                 var bv = $form.data('bootstrapValidator');
 
+                
                 // Use Ajax to submit form data
                 var url = 'https://script.google.com/macros/s/AKfycbwcYgaF2tk_-k1nt436LNUBCRBd4YzBXKsC4a2_EiPePquW_Xg/exec';
                 var arrayForm = makeArray(e);
